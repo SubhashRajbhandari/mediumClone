@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+  <%= post.title %>
+  <%= image_tag post.user.photo if post.user.photo.attached? %>
+  <%= image_tag post.photo %>
+  <%= post.description %>
+<% end %>
